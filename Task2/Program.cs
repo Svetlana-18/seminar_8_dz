@@ -18,7 +18,7 @@ int[,] CreateMtrixRndInt(int row, int col, int min, int max)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = new Random().Next(min, max);
+            matrix[i, j] = rnd.Next(min, max);
         }
     }
 
