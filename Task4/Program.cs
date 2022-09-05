@@ -7,9 +7,13 @@
 
 Console.Clear();
 
-int n = 6;
+Console.WriteLine("Введи размер стороны квадратной матрицы  ");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine();
 int[,] matrix = new int[n, n];
 
+void FillingSpiral(int[,] matrix)
+{
 int temp = 1;
 int i = 0;
 int j = 0;
@@ -27,8 +31,9 @@ while (temp <= matrix.GetLength(0) * matrix.GetLength(1))
     else
         i--;
 }
+}
 
-void WriteArray(int[,] array)
+void OutiputNumberSpiral(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -42,4 +47,6 @@ void WriteArray(int[,] array)
         Console.WriteLine();
     }
 }
-WriteArray(matrix);
+FillingSpiral(matrix);
+OutiputNumberSpiral(matrix);
+Console.WriteLine();

@@ -6,9 +6,9 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-int[,,] CreateMatrix(int row, int col, int r)
+int[,,] CreateMatrix(int row, int col, int vol)
 {
-    int[,,] matrix = new int[row, col, r];
+    int[,,] matrix = new int[row, col, vol];
     int w = 9;
     {
         for (int i = 0; i < matrix.GetLength(0); i++)
@@ -54,6 +54,7 @@ void CreateArrayRnd(int[,,] matrix)
             }
         }
     }
+
     int count = 0;
     for (int x = 0; x < matrix.GetLength(0); x++)
     {

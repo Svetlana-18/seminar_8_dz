@@ -61,7 +61,7 @@ int SearchMinimumSumString(int[,] matrix)
 
 }
 
-int[,] array = CreateMtrixRndInt(3, 3, 1, 10);
+int[,] array = CreateMtrixRndInt(2, 2, 1, 10);
 PrintMatrix(array);
 Console.WriteLine();
 int ar = SearchMinimumSumString(array);
